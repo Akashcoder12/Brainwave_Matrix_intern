@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.form-Container {
+  margin-bottom: 1.5rem;
+}
+
+.form-Container h2 {
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.form-Container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-Container button {
+  padding: 0.6rem 1.2rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-Container button:hover {
+  background-color: #45a049;
+}
+
+/* Box Containers */
+.box-container-1,
+.box-container-2,
+.box-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual Boxes */
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+  flex: 1 1 45%;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.box-5 {
+  flex: 1 1 100%;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5 {
+    flex: 1 1 100%;
+  }
+
+  .form-Container input,
+  .form-Container button {
+    font-size: 0.95rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
